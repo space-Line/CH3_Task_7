@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-CH3_Task_7.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Unreal Project\CH3_Task_7\CH3_Task_7\Intermediate\Build\Win64\x64\CH3_Task_7Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"C:\Unreal Project\CH3_Task_7\CH3_Task_7\Intermediate\Build\Win64\x64\UnrealEditor\Development\CH3_Task_7\CH3_Task_7.cpp.obj"
+"C:\Unreal Project\CH3_Task_7\CH3_Task_7\Intermediate\Build\Win64\x64\UnrealEditor\Development\CH3_Task_7\PerModuleInline.gen.cpp.obj"
+"C:\Unreal Project\CH3_Task_7\CH3_Task_7\Intermediate\Build\Win64\x64\UnrealEditor\Development\CH3_Task_7\Default.rc2.res"
+/OUT:"C:\Unreal Project\CH3_Task_7\CH3_Task_7\Intermediate\Build\Win64\x64\UnrealEditor\Development\CH3_Task_7\UnrealEditor-CH3_Task_7.lib"
