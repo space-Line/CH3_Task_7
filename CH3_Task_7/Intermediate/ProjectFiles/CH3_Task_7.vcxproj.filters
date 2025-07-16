@@ -11,6 +11,8 @@
     <None Include="..\..\Source\CH3_Task_7Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\UpgradeLog.htm" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -37,6 +39,30 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\CH3_Task_7\CH3_Task_7.h">
       <Filter>Source\CH3_Task_7</Filter>
+    </ClCompile>
+    <Filter Include="Source\CH3_Task_7\Private">
+      <UniqueIdentifier>{838E341B-919F-31E4-8A84-977AE29B67BC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CH3_Task_7\Private\SpartaGameModeBase.cpp">
+      <Filter>Source\CH3_Task_7\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_Task_7\Private\SpartaPlayerController.cpp">
+      <Filter>Source\CH3_Task_7\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_Task_7\Private\Sparta_Pawn.cpp">
+      <Filter>Source\CH3_Task_7\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\CH3_Task_7\Public">
+      <UniqueIdentifier>{F71A695D-8C10-35A1-90AE-337B855908C6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CH3_Task_7\Public\SpartaGameModeBase.h">
+      <Filter>Source\CH3_Task_7\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_Task_7\Public\SpartaPlayerController.h">
+      <Filter>Source\CH3_Task_7\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_Task_7\Public\Sparta_Pawn.h">
+      <Filter>Source\CH3_Task_7\Public</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
