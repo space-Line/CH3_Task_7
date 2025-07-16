@@ -29,8 +29,12 @@ ASparta_Pawn::ASparta_Pawn()
 	MeshComp->SetupAttachment(CapsuleComp);
 	MeshComp->SetSimulatePhysics(false);
 
-	MoveSpeed = 400.0f;
+	MoveSpeed = 600.0f;
 	InclineSpeed = 90.f;
+	Gravity = -980.f;
+	AirSpeed = 300.f;
+
+	IsGrounded = true;
 }
 
 void ASparta_Pawn::BeginPlay()
@@ -104,6 +108,27 @@ void ASparta_Pawn::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 		}
 	}
 }
+
+//void ASparta_Pawn::Tick(float DeltaTime)
+//{
+//	Super::Tick(DeltaTime);
+//
+//	CheckGrounded();
+//
+//	if(!IsGrounded)
+//	{
+//		MoveSpeed = MoveSpeed * 0.5f;
+//	}
+//	else
+//	{
+//		MoveSpeed = 600.f;
+//	}
+//}
+//
+//void ASparta_Pawn::CheckGrounded()
+//{
+//
+//}
 
 void ASparta_Pawn::Move(const FInputActionValue& value)
 {

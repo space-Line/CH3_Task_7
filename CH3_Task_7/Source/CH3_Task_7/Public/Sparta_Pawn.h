@@ -22,6 +22,11 @@ protected:
 	float MoveSpeed;
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float InclineSpeed;
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float Gravity;
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float AirSpeed;
+	bool IsGrounded;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	UCapsuleComponent* CapsuleComp;
@@ -48,6 +53,9 @@ protected:
 	UFUNCTION()
 	void InclineDown(const FInputActionValue& value);
 
+	//void CheckGrounded();
+
 	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	//virtual void Tick(float DeltaTime) override;
 };

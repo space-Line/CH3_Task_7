@@ -328,6 +328,14 @@ struct Z_Construct_UClass_ASparta_Pawn_Statics
 		{ "Category", "Movement" },
 		{ "ModuleRelativePath", "Public/Sparta_Pawn.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Gravity_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Public/Sparta_Pawn.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AirSpeed_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Public/Sparta_Pawn.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CapsuleComp_MetaData[] = {
 		{ "Category", "Components" },
 		{ "EditInline", "true" },
@@ -355,6 +363,8 @@ struct Z_Construct_UClass_ASparta_Pawn_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MoveSpeed;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_InclineSpeed;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Gravity;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_AirSpeed;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CapsuleComp;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MeshComp;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SpringArmComp;
@@ -378,6 +388,8 @@ struct Z_Construct_UClass_ASparta_Pawn_Statics
 };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_MoveSpeed = { "MoveSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASparta_Pawn, MoveSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveSpeed_MetaData), NewProp_MoveSpeed_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_InclineSpeed = { "InclineSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASparta_Pawn, InclineSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InclineSpeed_MetaData), NewProp_InclineSpeed_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_Gravity = { "Gravity", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASparta_Pawn, Gravity), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Gravity_MetaData), NewProp_Gravity_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_AirSpeed = { "AirSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASparta_Pawn, AirSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AirSpeed_MetaData), NewProp_AirSpeed_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_CapsuleComp = { "CapsuleComp", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASparta_Pawn, CapsuleComp), Z_Construct_UClass_UCapsuleComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CapsuleComp_MetaData), NewProp_CapsuleComp_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_MeshComp = { "MeshComp", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASparta_Pawn, MeshComp), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshComp_MetaData), NewProp_MeshComp_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_SpringArmComp = { "SpringArmComp", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASparta_Pawn, SpringArmComp), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpringArmComp_MetaData), NewProp_SpringArmComp_MetaData) };
@@ -386,6 +398,8 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASparta_Pawn_S
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASparta_Pawn_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_MoveSpeed,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_InclineSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_Gravity,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_AirSpeed,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_CapsuleComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_MeshComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASparta_Pawn_Statics::NewProp_SpringArmComp,
@@ -433,10 +447,10 @@ ASparta_Pawn::~ASparta_Pawn() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Project_CH3_Task_7_CH3_Task_7_Source_CH3_Task_7_Public_Sparta_Pawn_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASparta_Pawn, ASparta_Pawn::StaticClass, TEXT("ASparta_Pawn"), &Z_Registration_Info_UClass_ASparta_Pawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASparta_Pawn), 2200409674U) },
+		{ Z_Construct_UClass_ASparta_Pawn, ASparta_Pawn::StaticClass, TEXT("ASparta_Pawn"), &Z_Registration_Info_UClass_ASparta_Pawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASparta_Pawn), 1322918744U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Project_CH3_Task_7_CH3_Task_7_Source_CH3_Task_7_Public_Sparta_Pawn_h_3422383381(TEXT("/Script/CH3_Task_7"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Project_CH3_Task_7_CH3_Task_7_Source_CH3_Task_7_Public_Sparta_Pawn_h_1804070721(TEXT("/Script/CH3_Task_7"),
 	Z_CompiledInDeferFile_FID_Unreal_Project_CH3_Task_7_CH3_Task_7_Source_CH3_Task_7_Public_Sparta_Pawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Project_CH3_Task_7_CH3_Task_7_Source_CH3_Task_7_Public_Sparta_Pawn_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
